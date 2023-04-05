@@ -1,0 +1,171 @@
+/* Css variables  */
+
+:root{
+
+    --bgcolor : #2e2a8f;
+    --fontcolor: #FFE9E8;
+    }
+
+    
+*{
+
+    color: var(--fontcolor);
+}
+
+body{
+
+    background-color:  var(--bgcolor);
+    color: var(--fontcolor);
+    padding: 0%;
+    margin: 0%;
+    font-family:  Helvetica, sans-serif;
+}
+
+/* Hompage content styling starts */
+
+/* main container styling  */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    
+}
+
+h2{
+
+    font-size: 50px;
+}
+
+/* main container styling ends */
+
+/* about me section starts */
+
+.about-me-container{
+    
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* about me section ends */
+
+
+/* skills section starts */
+.skills-container{
+    background-color: var(--bgcolor) ;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 1%;
+    align-items: center;
+    justify-items: center;
+}
+
+.skills-container-item1{
+
+   grid-column: 1/3;
+    align-items: center;
+}
+
+
+
+.skills-container-item2 h4 , .skills-container-item3 h4 {
+    font-size: 30px;
+}
+
+.skills-container-item2 li , .skills-container-item3 li {
+
+    font-size: 20px;
+}
+
+.skills-container-item2 img , .skills-container-item3 img{
+
+    margin-left: 25%;
+}
+
+/* Table section */
+
+table,td,th{
+
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+
+table{
+    width: 70%;
+    
+    
+}
+
+.table-section{
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+/* media quarries for skills section */
+
+@media all and (max-width: 600px) {
+
+    .skills-container{
+        background-color: var(--bgcolor) ;
+        display: grid;
+        grid-template-columns:1fr;
+        width: 100%;
+        box-sizing: border-box; 
+        padding: 1%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .skills-container-item1{
+
+        grid-column: 1/1;
+     }
+
+     
+
+     
+
+}   
+
+
+/* skills section ends */
+
+/* education section starts */
+
+.education-section-container{
+
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+h2 + p {
+
+    font-size: 20px;
+}
+
+img~ol{
+
+    font-size: 20px;
+}
+
+/* education section ends */
+
+/* Hompage content styling ends */
