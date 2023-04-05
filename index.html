@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex Box</title>
+        <!-- Linkt section starts -->
+        <link rel="stylesheet" href="style.css">
+        <!-- GOOgle fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+        <!-- GOOgle fonts -->
+        <!-- Link section ends -->
+</head>
+        <body>
+            <header class="header-container" >
+                
+                    <!-- Desktop menu layout  -->
+                <div class="header-container-wrapper-desktop">
+                    <div class="header-container-item-1"><a href="index.html">Home</a></div>
+                    <div class="header-container-item-3"><a href="portfolio.html">Gallery</a></div>
+                    <div class="header-container-item-2"><a href="contact.html">Contact Me</a></div>
+                    <div class="header-container-item-4" id="header-item-4">
+                        <img src="assets/images/header/theme-btn-dark-2.png" alt="Theme changer button" id="theme-changer-btn">
+                        <div class="theme-dropdown-menu" id="theme-changer-menu">
+                            <div><img src="assets/images/header/theme-btn-dark.png" alt="Dark theme button" id="theme-btn-1"></div>
+                            <div><img src="assets/images/header/theme-btn-dark-2.png" alt="Light theme button" id="theme-btn-2"></div>
+                            <div><img src="assets/images/header/theme-btn-2.png" alt="third theme button" id="theme-btn-3"></div>
+                        </div>
+                    </div>
+                    <!-- Desktop menu layout -->
+                </div>
+
+                <!-- mobile and etablet layout -->
+                <div class="header-container-wrapper-mobile" id="mobile-menu">
+                    <img src="assets/images/header/hamburger-menu-dark.png" alt="Mobile menu open button" id="mobile-menu-btn">
+                    <div class="hamburger-menu-hidden" id="hamburger-menu">
+                        <img src="assets/images/header/hamburger-close-dark.png" alt="Mobile menu close button" id="menu-close-btn">
+                        <a href="index.html">Home</a>
+                        <a href="portfolio.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                        <div class="theme-dropdown-menu show-theme" id="theme-changer-menu">
+                            <div><img src="assets/images/header/theme-btn-dark.png" alt="Dark theme button" id="theme-btn-1"></div>
+                            <div><img src="assets/images/header/theme-btn-dark-2.png" alt="Light theme button" id="theme-btn-2"></div>
+                            <div><img src="assets/images/header/theme-btn-2.png" alt="Third theme button" id="theme-btn-3"></div>
+                        </div>
+                    </div>
+                </div>
+                    <!-- mobile and tablet layout -->
+            </header>
+                <!-- Header section starts -->
+
+
+                <main class="main-container-homepage">
+                        <!-- about me section ends -->
+                        <div class="about-me-container">
+                                <h2>About Me</h2>
+                                <p>Hi, I am Darasimi Ajayi, an aspiring game developer currently studying at Dalhousie University. <br>
+                                I have a really strong love for gaming as my earliest gaming experiences were as early as when I was 9 years old. <br> 
+                                I am a passionate, hard-working person and I am always eager to learn and try new things. <br>
+                                I mostly play First Person Shooters(Call of Duty) but i do also enjoy playing RPG games(like skyrim) or any Fighting games. <br>
+                                </p>
+                        </div>  
+                    <!-- About me section end -->
+                    <!-- Skills section start -->
+                    <div class="skills-container"> 
+                        <h2 class="skills-container-item1">Skills</h2>
+                        <!-- Programming Languages section start -->
+                    <div class="skills-container-item2">
+                            <img src="assets/images/index/code-icon-dark.png" alt="Programming Language Icon" id="programming-language-icon">
+                            <h4>Programming Lanuages</h4>
+                            <ol>
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ol>
+                        </div>
+                        <!-- Programming Languages div end -->
+                        <!-- Development Software start -->
+                        <div class="skills-container-item3">
+                            <img src="assets/images/index/tools-icon-dark.png" alt="Game Engine Icon" id="tools-icon">
+                            <h4>Development Software</h4>
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>Intelli J</li>
+                                <li>Unreal Engine 5</li>
+                                <li>Adobe Photoshop</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                        <!-- Development Software ends -->
+                    </div>
+                    <!--  Skills section end -->
+                    <!-- Education Section start -->
+                    <div class="education-section-container">        
+                        <h2>Education</h2>
+                        <img src="assets/images/index/education-icon-dark.png" id="education-icon">
+                        <ol>
+                            <li>Bachelors of Computer Science(Ongoing)</li>
+                            <li>Seconday School Degrees
+                                <ul>
+                                    <li>West African Senior Certificate Exam(WASCE)</li>
+                                    <li>National Examination Council(NECO)</li>
+                                </ul>
+                            </li>
+                            <li>International English Language Testing System(IELTS)</li>
+                        </ol>
+                    </div>
+                    <!-- Education Section end -->
+
+                    <!-- Table section -->
+                    <div class="table-section">
+                        <table>
+                            <tr >
+                                <th></th>
+                                <th>BEGINNER</th>
+                                <th>INTERMEDIATE</th>
+                                <th>ADVANCED</th>
+                            </tr>
+                            <tr>
+                                <td>C++</td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>JAVA</td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>HTML</td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Table section -->
+                </main>
+
+                <!-- Footer section start -->
+                <footer class="footer-container">
+                    <div class="footer-container-wrapper">
+                        <a href="mailto:dr716500@dal.ca"><img src="assets/images/footer/email-icon-dark.png" alt="" id="email-icon"></a>
+                        <a href="https://www.instagram.com/ajy_dan/"><img src="assets/images/footer/instagram-icon-dark.png" alt="Insta_icon" id="instagram-icon"></a>
+                        <a href="https://twitter.com/mad_eren27?t=a4Cr506z7puHlON6acu9sg&s=09"><img src="assets/images/footer/twitter-icon-dark.png" alt="Twitter_icon" id="twitter-icon"></a>
+                        <a href="https://discordapp.com/users/924342653502521384"><img src="assets/images/footer/discord-icon-dark.png" alt="Discord_icon" id="discord-icon"></a>
+                    </div>
+                </footer>
+                <!-- Footer section end -->
+                <!-- js scripts -->
+                <script src="assets/js/theme-dropdown.js"></script>
+                <script src="assets/js/theme-changer-homepage.js"></script>
+                <script src="assets/js/mobile-menu.js"></script>
+                <!-- js scripts -->
+        </body>
+
+        
+</html>

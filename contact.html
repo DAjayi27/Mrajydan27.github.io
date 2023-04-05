@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="style.css">      
+</head>
+<body>
+    <header class="header-container" id="">
+                
+        <!-- Desktop menu layout  -->
+    <div class="header-container-wrapper-desktop">
+        <div class="header-container-item-1"><a href="index.html">Home</a></div>
+        <div class="header-container-item-3"><a href="portfolio.html">Gallery</a></div>
+        <div class="header-container-item-2"><a href="contact.html">Contact Me</a></div>
+        <div class="header-container-item-4" id="header-item-4">
+            <img src="assets/images/header/theme-btn-dark-2.png" alt="Theme changer button" id="theme-changer-btn">
+            <div class="theme-dropdown-menu" id="theme-changer-menu">
+                <div><img src="assets/images/header/theme-btn-dark.png" alt="Dark theme button" id="theme-btn-1"></div>
+                <div><img src="assets/images/header/theme-btn-dark-2.png" alt="Light theme button" id="theme-btn-2"></div>
+                <div><img src="assets/images/header/theme-btn-2.png" alt="third theme button" id="theme-btn-3"></div>
+            </div>
+        </div>
+        <!-- Desktop menu layout -->
+    </div>
+
+    <!-- mobile and etablet layout -->
+    <div class="header-container-wrapper-mobile" id="mobile-menu">
+        <img src="assets/images/header/hamburger-menu-dark.png" alt="Mobile menu open button" id="mobile-menu-btn">
+        <div class="hamburger-menu-hidden" id="hamburger-menu">
+            <img src="assets/images/header/hamburger-close-dark.png" alt="Mobile menu close button" id="menu-close-btn">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <div class="theme-dropdown-menu show-theme" id="theme-changer-menu">
+                <div><img src="assets/images/header/theme-btn-dark.png" alt="Dark theme button" id="theme-btn-1"></div>
+                <div><img src="assets/images/header/theme-btn-dark-2.png" alt="Light theme button" id="theme-btn-2"></div>
+                <div><img src="assets/images/header/theme-btn-2.png" alt="Third theme button" id="theme-btn-3"></div>
+            </div>
+        </div>
+    </div>
+        <!-- mobile and tablet layout -->
+</header>
+    <!-- main container area  -->
+    <main class="main-container-contact" >
+        <!-- Contact from section starts -->
+        <section class="form-section">
+            <!-- contact section 1 stars -->
+            <div class="contact-section-1">
+                <div class="contact-section-1-wrapper">
+                    <h3>Contact Me</h3>
+                    <form action="" method="post" id="formSubmit">
+                    <p>
+                        <label for="nameInput"></label>
+                        <input type="text" name="nameInput" id="nameInput" required placeholder="Name">
+                        <p id="warning-message-text-name" class="hide-message">Please enter a valid name</p>
+                    </p>
+
+                    <p>
+                        <label for="emailInput"></label>
+                        <input type="email" name="emailInput" id="emailInput" required placeholder="Email" >
+                        <p id="warning-message-text-email" class="hide-message">Please enter a valid email address</p>
+                    </p>
+                    <p>
+                        <label for="phoneNumber"></label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" required placeholder="Phone Number">
+                        <p id="warning-message-text-number" class="hide-message">Please enter a valid phone number</p>
+                    </p>
+                    <p>
+                        <label for="messageInput"></label>
+                        <textarea name="messageInput" id="messageInput" cols="30" rows="10" required placeholder="Message"></textarea>
+                        <p id="warning-message-text-message" class="hide-message">Please enter a message</p>
+                    </p>
+                    <p id="submit-btn-alingment">
+                        <input type="submit" value="Submit" class="submit-btn" id="submitBtn">
+                    </p>
+                </form>
+                </div>
+            </div>
+            <!-- contact section 1 ends -->
+
+            <!-- contact section 2 starts -->
+            <div class="contact-section-2">
+                <img src="assets/images/Contact page/contact icon.png" alt="email icon">
+            </div>
+            <!-- contact section 2 ends-->
+        </section>
+        <!-- Contact from section ends -->
+    </main>
+    <!-- main container area  -->
+    <footer class="footer-container">
+        <div class="footer-container-wrapper">
+            <a href="mailto:dr716500@dal.ca"><img src="assets/images/footer/email-icon-dark.png" alt="email icon" id="email-icon"></a>
+            <a href="https://www.instagram.com/ajy_dan/"><img src="assets/images/footer/instagram-icon-dark.png" alt="Insta_icon" id="instagram-icon"></a>
+            <a href="https://twitter.com/mad_eren27?t=a4Cr506z7puHlON6acu9sg&s=09"><img src="assets/images/footer/twitter-icon-dark.png" alt="Twitter_icon" id="twitter-icon"></a>
+            <a href="https://discordapp.com/users/924342653502521384"><img src="assets/images/footer/discord-icon-dark.png" alt="Discord_icon" id="discord-icon"></a>
+        </div>
+    </footer>
+    <!-- js scripts -->
+    <script src="assets/js/theme-dropdown.js"></script>
+    <script src="assets/js/theme-changer-contact.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <!-- js scripts -->    
+</body>
+</html>
