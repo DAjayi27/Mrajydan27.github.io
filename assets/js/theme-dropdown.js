@@ -13,6 +13,7 @@ let themeChangerMenuMobile = document.querySelectorAll('#theme-changer-menu')[1]
 let themeMenuMobile = document.querySelector('#theme-changer-menu');
 let themeBtn1Mobile = document.querySelectorAll('#theme-btn-1')[1];
 let themeBtn2Mobile = document.querySelectorAll('#theme-btn-2')[1];
+let themeBtn3Mobile = document.querySelectorAll('#theme-btn-3')[1];
 
 // Event listners
 // desktop 
