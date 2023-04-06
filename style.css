@@ -296,6 +296,118 @@ body {
         p{  font-size: 20px;}
 
         /* main container styling ends */
+        /* Hero image section starts */
+        .hero-image-container{
+            height: 100vh;
+            display: flex;
+            justify-content:space-around;
+            align-items: center ;
+           
+            flex-wrap: wrap;
+        }
+        .hero-image-container img{
+            margin-right: 20px;
+            width: 450px;
+            height: 450px;
+        }
+        .hero-image-container p {
+            text-align: center;
+            font-size: 60px;
+            font-family: 'Fira Code', monospace;
+        }
+        .programming-avatar{
+            
+            justify-self: flex-end;
+        }
+        #text-scroll-text-1{
+           
+        }
+        #text-scroll-text-2{
+
+           
+        }
+        .text-scroll{
+           
+        }
+
+        .text-animation{
+
+            position: relative;
+            animation-name: text-scroll-text-1;
+            animation-duration: 1.5s;
+        }
+
+        @media screen and (max-width: 1080px) {
+            
+            .hero-image-container{
+
+                height: 100%;
+            }
+
+            .hero-image-container p{
+            font-size: 50px;
+            }
+        }
+        @media screen and (max-width: 900px) {
+            
+           .hero-image-container img {
+
+                width: 250px;
+                height: 250px;
+           }
+        
+        }
+        @media screen and (max-width: 650px) {
+            
+            .hero-image-container{
+
+
+                
+                padding-left: 50px;
+                padding-top:20px ;
+                padding-bottom: 20px;
+            }
+
+            .hero-image-container p{
+                font-size: 50px;
+                text-align: left;
+                font-weight: bolder;
+            }
+            .hero-image-container img{
+                align-self: flex-start;
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        /* key frames for text anmgation */
+        @keyframes text-scroll-text-1 {
+            
+            0%{
+
+                left: -100%;
+            }
+
+            100%{
+
+                left: 0%;
+            }
+        }
+
+
+        @keyframes text-scroll-text-2 {
+            
+            0%{
+
+                left: -100%;
+            }
+
+            100%{
+
+                left: 10%;
+            }
+        }
+        /* Hero image section ends */
         /* about me section starts */
         .about-me-container{
             padding: 5%;
