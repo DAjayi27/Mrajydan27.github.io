@@ -705,6 +705,10 @@ body {
             align-items: center;
             padding: 20px;
         }
+        form{
+
+            width: 70vw
+        }
         .contact-section-1{
             background-color: var(--form-bg-side-1);
             display: flex;
