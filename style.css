@@ -46,6 +46,20 @@ body {
     font-family: 'Fira Code', monospace;
 }
 
+.contact-body{
+    padding: 0%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 5fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--bgcolor-1);
+    color: var(--fontcolor);
+    font-family: 'Fira Code', monospace;
+}
+
 /* Body styling ends */
 
 /* CSS FOR HEADER AND FOOTERS (START) */
@@ -104,9 +118,18 @@ body {
             display: grid;
             grid-template-rows: 0.1fr 4fr 1fr;
             grid-template-columns: 1fr 1fr;
-            height: 100vh;
             padding: 0%;
             margin: 0%;
+        }
+
+        .contact-body{
+
+            display: grid;
+            grid-template-rows: 0.1fr 4fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            padding: 0%;
+            margin: 0%;
+            height: 100%;
         }
         /* media queries for the body */
 
@@ -413,7 +436,6 @@ body {
         .about-me-container{
             padding: 5%;
             background: var(--bgcolor-2);
-            color: var(--fontcolor);
             display: flex;
             flex-direction: column;
             align-items: center;
