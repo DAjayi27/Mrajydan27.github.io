@@ -1,0 +1,137 @@
+.main_container{
+    margin: 1%;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    justify-items: center;
+}
+.title_menu_container{
+    grid-row:1/2 ;
+    grid-column: 2/3;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
+    justify-items: center;
+}
+
+.menu_bar{ 
+}
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+li a{
+    text-decoration: none;
+    color: var(--textcolor);
+    transition: 0.4s;
+    transition-timing-function: linear;
+    transition-delay: 10ms;
+   
+}
+
+li a:hover{
+    color: var(--nametextcolor);
+    font-size:var(--linkhoverfontsize);
+    transition: 0.4s;
+    transition-timing-function: linear;
+    transition-delay: 10ms;
+
+}
+
+
+/* .title_container{
+    display: flex;
+    flex-direction: column;
+    color: var(--nametextcolor);
+    align-items: center;
+    margin-top: 10px;
+} */
+
+.first_word{
+    font-size: 15vw;
+    letter-spacing: 0.6vw;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    align-self: end;
+}
+
+.second_word{
+    position: relative;
+    font-size: 15vw;
+    
+   
+  
+}
+
+.about_me{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_me p{
+    font-size: 20px;
+}
+
+.about_me img{
+
+height: 50vh;
+  border-radius: 50%;
+}
+
+
+.about_me p{
+    line-height: 120%;
+    text-align: center;
+  }
+  
+
+.education_history{
+    grid-column: span 2;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4%;
+}
+
+.education_history h2{
+    font-size: 70px;
+}
+
+
+.skills_container{
+    /* grid-row:3/4 ;
+    grid-column:1/3 ; */
+    grid-column: span 2;
+    width: 100%;
+    margin: 4%
+}
+
+.skills_container h2{
+    font-size: 70px;
+    text-align: center;
+}
+
+.skills_list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills_list li{
+
+    font-size: 20px;
+    list-style: circle;
+}
