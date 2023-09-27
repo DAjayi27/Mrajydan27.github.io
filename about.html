@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
+    
     <title>About Me</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <div class="title_menu_container">
             <ul class="menu_bar">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
+                <!-- <li><a href="#">PORTFOLIO</a></li> -->
                 <li><a href="about.html">ABOUT ME</a></li>
             </ul>
 
@@ -24,40 +25,39 @@
         
 
         <div class="about_me">
-            <img src="images/img_avatar.png" alt="">
+            <img src="images/about/ppe.png"  alt="">
             <p>Hey there! I'm Ajayi Darasimi, a CS major rocking HTML, CSS, and JavaScript. Being a fast learner and hard worker, solving problems, picking up new skills, and squashing bugs is something I do very well. I also excel in collaborative work within a team, helping to bring all projects to life. When I'm not working, I also spend my free time relaxing by gaming, reading manga, or watching anime.</p>
         </div>
 
         <div class="education_history">
-            <h2>Education</h2>
-            <img src="images/index/education-icon-dark.png" id="education-icon" alt="Education icon">
+            <h2 class="hidden">Education</h2>
+            <img src="images/index/education-icon-dark.png" id="education-icon" alt="Education icon" class="hidden delay-1">
             <ol>
-                <li>Bachelors of Computer Science(Ongoing)</li>
-                <li>Seconday School Degrees
+                <li class="hidden delay-2">Bachelors of Computer Science(Ongoing)</li>
+                <li class="hidden delay-3">Seconday School Degrees
                     <ul>
-                        <li>West African Senior Certificate Exam(WASCE)</li>
-                        <li>National Examination Council(NECO)</li>
+                        <li class="hidden delay-4">West African Senior Certificate Exam(WASCE)</li>
+                        <li class="hidden delay-5">National Examination Council(NECO)</li>
                     </ul>
-                </li>
-                <li>International English Language Testing System(IELTS)</li>
+                </li>   
             </ol>
         </div>
 
         <div class="skills_container">
-            <h2>Skills</h2>
+            <h2 class="hidden">Skills</h2>
             <div class="skills_list">
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                    <li>JAVA</li>
+                    <li class="hidden delay-1">HTML</li>
+                    <li class="hidden delay-2">CSS</li>
+                    <li class="hidden delay-3">JavaScript</li>
+                    <li class="hidden delay-4">JAVA</li>
                 </ul>   
     
                 <ul>
-                    <li>C++</li>
-                    <li>PYTHON</li>
-                    <li>Unity</li>
-                    <li>Tailwind</li>
+                    <li class="hidden delay-1">C++</li>
+                    <li class="hidden delay-2">PYTHON</li>
+                    <li class="hidden delay-3">Unity</li>
+                    <li class="hidden delay-4">Tailwind</li>
                 </ul>
             </div>
             
@@ -67,21 +67,25 @@
 
     <footer class="footer_container"> 
         <div>
-            [  ]
+            <p>[ GitHub ]</p>
+            <a href=""><img src="images/footer/icons8-github-40.png" alt="email_icon" class="icon"></a>
         </div>
 
         <div>
-            <p>[ email icon ]</p>
-            <a href=""><img src="images/index/icons8-email-50.png" alt="email_icon"></a>
+            <p>[ email ]</p>
+            <a href=""><img src="images/index/icons8-email-50.png" alt="email_icon" class="icon"></a>
             
         </div>
 
         <div>
             <p>[linkiedin]</p>
-            <a href=""><img src="images/index/icons8-linked-in-50.png" alt="linkiedin_icon"></a>
+            <a href=""><img src="images/index/icons8-linked-in-50.png" alt="linkiedin_icon" class="icon"></a>
             
         </div>
     </footer>
+
+
+    <script src="js/animate-on-scroll.js"></script>
     
 </body>
 </html>
